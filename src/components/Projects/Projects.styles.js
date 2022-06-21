@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const Projects = styled.div`
   display: flex;
   flex-direction: column;
+  width: 100vw;
 
   div.text {
     position: relative;
@@ -30,5 +31,9 @@ export const Projects = styled.div`
   }
   strong {
     color: #7deaf4;
+  }
+
+  div.flex {
+    display: flex;
   }
 `;

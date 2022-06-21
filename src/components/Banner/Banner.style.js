@@ -14,7 +14,7 @@ export const Banner = styled.div`
   height: 10rem;
   margin-bottom: 10rem;
   position: relative;
-  right: 9rem;
+  right: 9.2rem;
   transform: ${(props) =>
     props.deg === 'diagonal' ? 'skewy(-2deg)' : 'skewy(2deg)'};
   width: 100vw;

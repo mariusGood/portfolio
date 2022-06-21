@@ -7,7 +7,7 @@ export const ProjectList = styled.section`
   padding: 0 2rem;
 
   h1 {
-    color: #7deaf4;
+    color: inherit;
     font-size: 3rem;
     margin: 0;
   }

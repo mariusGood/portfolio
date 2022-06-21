@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from '../Button/Button';
 import * as S from './Projects.styles';
 
 const Projects = ({ title, description, image, link, links }) => {
@@ -17,14 +18,14 @@ const Projects = ({ title, description, image, link, links }) => {
           </a>
         ))}
       </div>
-      <strong>Front-End:</strong>
-      <a href={links.front} target={'_blank'} rel='noreferrer'>
-        {links.front}
-      </a>
-      <strong>Back-End:</strong>
-      <a href={links.back} target={'_blank'} rel='noreferrer'>
-        {links.back}
-      </a>
+      <div className='flex'>
+        <a href={links.front} target={'_blank'} rel='noreferrer'>
+          <Button>Front-End</Button>
+        </a>
+        <a href={links.back} target={'_blank'} rel='noreferrer'>
+          <Button>Back-End</Button>
+        </a>
+      </div>
     </S.Projects>
   );
 };

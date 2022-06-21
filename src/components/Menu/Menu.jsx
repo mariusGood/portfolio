@@ -12,6 +12,8 @@ const Menu = () => {
           spy={true}
           smooth={true}
           duration={500}
+          offset={-130}
+          delay={200}
           ignoreCancelEvents={false}
           onClick={scroll.scrollTo('home')}
         >
@@ -22,8 +24,9 @@ const Menu = () => {
           spy={true}
           smooth={true}
           duration={500}
-          onClick={scroll.scrollTo('projects')}
+          delay={200}
           ignoreCancelEvents={false}
+          onClick={scroll.scrollTo('projects')}
         >
           Projects
         </S.Links>
