@@ -10,6 +10,7 @@ const Hero = () => {
         <h1>
           Hi, I'm <span>Marius</span> & I'm Jr. Web Developer
         </h1>
+        <p>Looking for my first Jr. Front-End / Full-stack developer job.</p>
         <ul>
           <li>
             <a href='https://github.com/mariusGood'>

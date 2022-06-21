@@ -42,5 +42,8 @@ export const Hero = styled.section`
     span {
       color: #7deaf4;
     }
+    p {
+      padding: 1rem 2rem;
+    }
   }
 `;

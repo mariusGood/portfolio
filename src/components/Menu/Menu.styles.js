@@ -21,12 +21,12 @@ export const Navigation = styled.nav`
   display: flex;
   align-items: center;
   flex-direction: column;
-  border-top: 1px solid #e0e0e0;
+  border-top: 1px solid #7deaf4;
   width: 100%;
 `;
 
 export const Links = styled(Link)`
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1px solid #7deaf4;
   color: #e0e0e0;
   cursor: pointer;
   font-size: 1.1rem;

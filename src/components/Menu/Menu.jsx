@@ -25,18 +25,21 @@ const Menu = () => {
           smooth={true}
           duration={500}
           delay={200}
+          offset={-50}
           ignoreCancelEvents={false}
           onClick={scroll.scrollTo('projects')}
         >
           Projects
         </S.Links>
         <S.Links
-          to='#about'
+          to='about'
           spy={true}
           smooth={true}
           duration={500}
-          delay={1000}
-          onClick={scroll.animateTopScroll}
+          delay={200}
+          offset={-100}
+          ignoreCancelEvents={false}
+          onClick={scroll.scrollTo('about')}
         >
           About
         </S.Links>

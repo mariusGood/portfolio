@@ -3,11 +3,11 @@ import styled from 'styled-components';
 export const Projects = styled.div`
   display: flex;
   flex-direction: column;
-  width: 100vw;
+  width: 80vw;
 
   div.text {
     position: relative;
-    top: 7rem;
+    top: 8rem;
     left: 1rem;
     width: 50%;
     z-index: 5;

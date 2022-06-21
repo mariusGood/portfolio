@@ -3,8 +3,6 @@ import Button from '../Button/Button';
 import * as S from './Projects.styles';
 
 const Projects = ({ title, description, image, link, links }) => {
-  const handleClick = () => {};
-  console.log('links ===', links);
   return (
     <S.Projects>
       <div className='text'>
@@ -14,7 +12,7 @@ const Projects = ({ title, description, image, link, links }) => {
       <div>
         {image.map((img) => (
           <a href={link} target={'_blank'} rel='noreferrer'>
-            <img src={img} alt='' onClick={handleClick} />
+            <img src={img} alt='' />
           </a>
         ))}
       </div>
