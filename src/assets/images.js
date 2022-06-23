@@ -5,22 +5,22 @@ const images = {
 };
 
 export const icons = [
-  require('../assets/html.png'),
-  require('../assets/css.jpg'),
-  require('../assets/js.png'),
-  require('../assets/type.png'),
-  require('../assets/nodejs.png'),
-  require('../assets/react.png'),
-  require('../assets/mysql.png'),
-  require('../assets/git.png'),
-  require('../assets/sass.png'),
+  { id: 1, img: require('../assets/html.png') },
+  { id: 2, img: require('../assets/css.jpg') },
+  { id: 3, img: require('../assets/js.png') },
+  { id: 4, img: require('../assets/type.png') },
+  { id: 5, img: require('../assets/nodejs.png') },
+  { id: 6, img: require('../assets/react.png') },
+  { id: 7, img: require('../assets/mysql.png') },
+  { id: 8, img: require('../assets/git.png') },
+  { id: 9, img: require('../assets/sass.png') },
 ];
 
 export const icons2 = [
-  require('../assets/next.png'),
-  require('../assets/native.png'),
-  require('../assets/py.jpg'),
-  require('../assets/mongo.png'),
+  { id: 10, img: require('../assets/next.png') },
+  { id: 11, img: require('../assets/native.png') },
+  { id: 12, img: require('../assets/py.jpg') },
+  { id: 13, img: require('../assets/mongo.png') },
 ];
 
 export default images;
