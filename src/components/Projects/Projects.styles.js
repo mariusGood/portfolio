@@ -7,7 +7,7 @@ export const Projects = styled.div`
 
   div.text {
     position: relative;
-    top: 8rem;
+    top: 7rem;
     left: 1rem;
     width: 50%;
     z-index: 5;

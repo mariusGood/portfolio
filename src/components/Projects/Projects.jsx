@@ -11,7 +11,7 @@ const Projects = ({ title, description, image, link, links }) => {
       </div>
       <div>
         {image.map((img) => (
-          <a href={link} target={'_blank'} rel='noreferrer'>
+          <a key={img} href={link} target={'_blank'} rel='noreferrer'>
             <img src={img} alt='' />
           </a>
         ))}

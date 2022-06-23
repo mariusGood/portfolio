@@ -4,6 +4,7 @@ export const About = styled.section`
   font-size: 1.5rem;
   text-transform: uppercase;
   text-align: center;
+  height: 100vh;
   width: 90%;
 
   ul.first-list {

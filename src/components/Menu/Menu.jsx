@@ -43,6 +43,18 @@ const Menu = () => {
         >
           About
         </S.Links>
+        <S.Links
+          to='contact'
+          spy={true}
+          smooth={true}
+          duration={500}
+          delay={200}
+          offset={-100}
+          ignoreCancelEvents={false}
+          onClick={scroll.scrollTo('contact')}
+        >
+          Contact
+        </S.Links>
       </S.Navigation>
     </S.Menu>
   );

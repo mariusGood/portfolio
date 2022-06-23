@@ -27,7 +27,7 @@ export const Navigation = styled.nav`
 
 export const Links = styled(Link)`
   border-bottom: 1px solid #7deaf4;
-  color: #e0e0e0;
+  color: #ffffff;
   cursor: pointer;
   font-size: 1.1rem;
   line-height: 5rem;

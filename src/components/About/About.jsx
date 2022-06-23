@@ -8,21 +8,24 @@ const About = () => {
     <S.About id='about'>
       <div>
         <p>
-          just finished <a href='https://codeacademy.lt/'>codeacademy</a>{' '}
+          just finished
+          <a href='https://codeacademy.lt/' target='_blank' rel='noreferrer'>
+            codeacademy
+          </a>{' '}
           courses and in 5.5 month so far learnerd:
         </p>
         <ul className='first-list'>
-          {icons.map((image) => (
-            <li>
-              <img src={image} alt='' />
+          {icons.map((el) => (
+            <li key={el.id}>
+              <img src={el.img} alt='' />
             </li>
           ))}
         </ul>
         <p>in the future I would love to learn these languages / programs</p>
         <ul className='second-list'>
-          {icons2.map((image) => (
-            <li>
-              <img src={image} alt='' />
+          {icons2.map((el) => (
+            <li key={el.id}>
+              <img src={el.img} alt='' />
             </li>
           ))}
         </ul>
