@@ -13,7 +13,7 @@ export const Menu = styled.menu`
   position: fixed;
   left: 0;
   top: 0;
-  width: 8rem;
+  width: 8vw;
   z-index: 10;
 `;
 
@@ -29,19 +29,23 @@ export const Links = styled(Link)`
   border-bottom: 1px solid #7deaf4;
   color: #ffffff;
   cursor: pointer;
-  font-size: 1.1rem;
-  line-height: 5rem;
+  font-size: 1.1vw;
+  line-height: 5vw;
   text-align: center;
   text-decoration: none;
   width: 100%;
 
   :hover {
     color: #7deaf4;
-    font-size: 1.25rem;
+    font-size: 1.3vw;
     transition: ease 0.5s;
   }
 
   :focus {
     color: #7deaf4;
+  }
+
+  @media screen and (min-width: 2000px) {
+    line-height: 8rem;
   }
 `;

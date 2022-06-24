@@ -1,26 +1,29 @@
 import styled from 'styled-components';
 
 export const About = styled.section`
-  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.75vw;
   text-transform: uppercase;
   text-align: center;
   height: 100vh;
-  width: 90%;
+  margin-bottom: 10vw;
+
+  ul {
+    padding: 2.5vw;
+  }
 
   ul.first-list {
     display: flex;
     background-color: #ffffff;
     justify-content: space-between;
-    padding: 2rem;
-    margin-left: 3rem;
   }
 
   ul.second-list {
     display: flex;
     background-color: #ffffff;
     justify-content: space-evenly;
-    padding: 2rem;
-    margin-left: 3rem;
   }
 
   li {
@@ -28,8 +31,8 @@ export const About = styled.section`
   }
 
   img {
-    height: 5rem;
-    width: 6rem;
+    height: 6vw;
+    width: 6vw;
   }
 
   a {

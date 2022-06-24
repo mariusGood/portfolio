@@ -4,11 +4,12 @@ export const Projects = styled.div`
   display: flex;
   flex-direction: column;
   width: 80vw;
+  font-size: 1.2vw;
 
   div.text {
     position: relative;
-    top: 7rem;
-    left: 1rem;
+    top: 6vw;
+    left: 3vh;
     width: 50%;
     z-index: 5;
   }
@@ -16,8 +17,7 @@ export const Projects = styled.div`
   img {
     border-radius: 3px;
     filter: brightness(50%);
-    height: 25rem;
-    width: auto;
+    height: 30vw;
 
     &:hover {
       filter: brightness(80%);
@@ -35,5 +35,10 @@ export const Projects = styled.div`
 
   div.flex {
     display: flex;
+  }
+
+  p,
+  h2 {
+    margin: 0;
   }
 `;

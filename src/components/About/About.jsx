@@ -8,7 +8,7 @@ const About = () => {
     <S.About id='about'>
       <div>
         <p>
-          just finished
+          just finished{' '}
           <a href='https://codeacademy.lt/' target='_blank' rel='noreferrer'>
             codeacademy
           </a>{' '}

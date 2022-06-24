@@ -1,33 +1,34 @@
 import styled from 'styled-components';
 
 export const Form = styled.section`
-  height: 80vh;
+  height: 100vh;
+  font-size: 1.25vw;
 
   h1 {
-    font-size: 3rem;
+    font-size: 7vh;
     margin: 0;
     text-align: center;
   }
   form {
     display: flex;
     flex-direction: column;
-    background: #2e2e2e;
     margin: 0 auto;
-    width: 50%;
+    width: 50vw;
   }
   label {
-    padding: 0.5rem 0;
+    padding: 1vh 0;
   }
   input,
   textarea {
-    color: #ffffff;
-    padding: 1rem;
-    background: #7e7e7e;
-    border: 1px solid #7deaf4;
+    background: #ffffff50;
     border-radius: 5px;
+    border: 1px solid #7deaf4;
+    color: #ffffff;
+    cursor: default;
+    padding: 1.5vh;
   }
 
   button {
-    padding: 1rem;
+    padding: 2vh;
   }
 `;

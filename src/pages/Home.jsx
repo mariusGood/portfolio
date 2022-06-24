@@ -16,6 +16,7 @@ const Home = () => {
       <ProjectsList />
       <Banner />
       <About />
+      <Banner deg='diagonal' />
       <ContactForm />
       <Footer />
     </div>

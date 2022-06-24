@@ -5,21 +5,27 @@ export const Hero = styled.section`
   align-items: flex-start;
   color: inherit;
   height: 80vh;
-  width: 60%;
+  width: 60vw;
+  font-size: 1.25vw;
+
+  @media screen and (max-width: 1000px) {
+    height: 60vh;
+  }
 
   ul {
     display: flex;
-    padding: 0;
-    width: 10rem;
+    align-items: center;
+    padding: 0 1rem;
+    width: 20vh;
   }
 
   li {
     list-style: none;
-    padding: 1rem 2rem;
+    padding: 0.5vw 2vw;
 
     a {
       color: inherit;
-      font-size: 1.25rem;
+      font-size: 2.5vh;
       text-decoration: none;
 
       :hover {
@@ -33,7 +39,7 @@ export const Hero = styled.section`
     padding: 2rem;
 
     h1 {
-      font-size: 5rem;
+      font-size: 5vw;
       font-weight: 600;
       margin: 0;
       padding: 0 2rem;

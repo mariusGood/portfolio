@@ -14,7 +14,7 @@ const Menu = () => {
           duration={500}
           offset={-130}
           delay={200}
-          ignoreCancelEvents={false}
+          ignoreCancelEvents={true}
           onClick={scroll.scrollTo('home')}
         >
           <i className='fa-solid fa-house'></i>
@@ -26,7 +26,7 @@ const Menu = () => {
           duration={500}
           delay={200}
           offset={-50}
-          ignoreCancelEvents={false}
+          ignoreCancelEvents={true}
           onClick={scroll.scrollTo('projects')}
         >
           Projects
@@ -37,7 +37,6 @@ const Menu = () => {
           smooth={true}
           duration={500}
           delay={200}
-          offset={-100}
           ignoreCancelEvents={false}
           onClick={scroll.scrollTo('about')}
         >
@@ -50,7 +49,7 @@ const Menu = () => {
           duration={500}
           delay={200}
           offset={-100}
-          ignoreCancelEvents={false}
+          ignoreCancelEvents={true}
           onClick={scroll.scrollTo('contact')}
         >
           Contact
