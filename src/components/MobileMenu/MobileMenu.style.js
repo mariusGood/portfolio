@@ -48,6 +48,10 @@ export const Links = styled(Link)`
   text-decoration: none;
   width: 100%;
 
+  @media screen and (max-width: 768px) {
+    font-size: 3vw;
+  }
+
   @media screen and (max-width: 426px) {
     font-size: 2.5vh;
     line-height: 10vh;
