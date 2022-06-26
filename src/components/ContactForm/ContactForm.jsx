@@ -42,8 +42,11 @@ const ContactForm = () => {
   return (
     <Form id='contact'>
       <div>
-        <h1>Contact me</h1>
+        <a className='back' href='/'>
+          <i className='fa-solid fa-arrow-left-long'></i>
+        </a>
         <form onSubmit={handleSubmit}>
+          <h1>Contact me</h1>
           <label htmlFor='name'>Name</label>
           <input type='text' id='name' />
           <label htmlFor='email'>Email</label>

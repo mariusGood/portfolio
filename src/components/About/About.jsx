@@ -6,6 +6,9 @@ import { icons2 } from '../../assets/images.js';
 const About = () => {
   return (
     <S.About id='about'>
+      <a className='back' href='/'>
+        <i className='fa-solid fa-arrow-left-long'></i>
+      </a>
       <div>
         <p>
           just finished{' '}

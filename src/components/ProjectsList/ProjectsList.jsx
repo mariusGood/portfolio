@@ -17,18 +17,21 @@ const links = [
 const ProjectsList = () => {
   return (
     <ProjectList id='projects'>
-      <h1>Projects:</h1>
+      <a className='back' href='/'>
+        <i className='fa-solid fa-arrow-left-long'></i>
+      </a>
+      <h1>Projects</h1>
       <Projects
         title='E-commerce Website'
         description='Simple responsive e-commerce shop with registration and login forms and protected routes built using ReactJs & NodeJs.'
-        image={[images.homepage, images.login]}
+        image={images.homepage}
         link='https://plankton-app-uelyf.ondigitalocean.app'
         links={links[0]}
       />
       <Projects
         title='Todo app'
-        description='Full CRUD todo app also built using ReactJs & NodeJs.'
-        image={[images.todo]}
+        description='Full CRUD todo app with first my first pagination also built using ReactJs & NodeJs.'
+        image={images.todo}
         link='https://seal-app-zws4n.ondigitalocean.app'
         links={links[1]}
       />

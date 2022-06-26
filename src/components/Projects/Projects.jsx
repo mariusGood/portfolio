@@ -10,11 +10,9 @@ const Projects = ({ title, description, image, link, links }) => {
         <p>{description}</p>
       </div>
       <div>
-        {image.map((img) => (
-          <a key={img} href={link} target={'_blank'} rel='noreferrer'>
-            <img src={img} alt='' />
-          </a>
-        ))}
+        <a href={link} target={'_blank'} rel='noreferrer'>
+          <img src={image} alt='' />
+        </a>
       </div>
       <div className='flex'>
         <a href={links.front} target={'_blank'} rel='noreferrer'>

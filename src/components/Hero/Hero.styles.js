@@ -8,7 +8,8 @@ export const Hero = styled.section`
   width: 60vw;
   font-size: 1.25vw;
 
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 768px) {
+    width: 80vw;
     height: 60vh;
   }
 
@@ -25,7 +26,7 @@ export const Hero = styled.section`
 
     a {
       color: inherit;
-      font-size: 2.5vh;
+      font-size: 1.25vw;
       text-decoration: none;
 
       :hover {
@@ -36,20 +37,51 @@ export const Hero = styled.section`
   }
 
   .hero-section {
-    padding: 2rem;
+    padding: 2rem 0 0 2rem;
 
     h1 {
       font-size: 5vw;
       font-weight: 600;
       margin: 0;
-      padding: 0 2rem;
+      padding: 0 2vw;
+      animation: 2s anim-lineUp ease-out;
     }
 
     span {
       color: #7deaf4;
     }
     p {
-      padding: 1rem 2rem;
+      animation: 4s anim-lineUp ease-out;
+      padding: 1vw 2vw;
+    }
+
+    li,
+    button {
+      animation: 6s anim-lineUp ease-out;
+    }
+
+    @media screen and (max-width: 768px) {
+      a,
+      p {
+        font-size: 2vw;
+      }
+      h1 {
+        font-size: 6vw;
+      }
+    }
+
+    @media screen and (max-width: 426px) {
+      h1 {
+        font-size: 6vh;
+      }
+      a,
+      p {
+        font-size: 2vh;
+      }
+
+      ul {
+        padding: 0;
+      }
     }
   }
 `;

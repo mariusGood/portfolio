@@ -1,12 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import * as Scroll from 'react-scroll';
+import MobileMenu from '../MobileMenu/MobileMenu';
 import * as S from './Menu.styles';
 
 const Menu = () => {
   let scroll = Scroll.animateScroll;
+  const [display, setDisplay] = useState(false);
+  const handleClick = () => {
+    display === false ? setDisplay(true) : setDisplay(false);
+  };
   return (
     <S.Menu className='main-menu'>
-      <S.Navigation className='main-navigation'>
+      <i onClick={handleClick} id='bars' className='fa-solid fa-bars'></i>
+      {display && <MobileMenu />}
+      <S.Navigation display={display} className='main-navigation'>
         <S.Links
           to='home'
           spy={true}
@@ -48,8 +55,8 @@ const Menu = () => {
           smooth={true}
           duration={500}
           delay={200}
-          offset={-100}
           ignoreCancelEvents={true}
+          offset={-50}
           onClick={scroll.scrollTo('contact')}
         >
           Contact

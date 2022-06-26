@@ -13,8 +13,28 @@ export const Menu = styled.menu`
   position: fixed;
   left: 0;
   top: 0;
+  bottom: 0;
   width: 8vw;
   z-index: 10;
+
+  #bars {
+    display: none;
+  }
+
+  @media screen and (max-width: 768px) {
+    border-right: none;
+    #bars {
+      position: absolute;
+      top: 2vw;
+      right: 2vw;
+      font-size: 1.75rem;
+      display: block;
+      @media screen and (max-width: 426px) {
+        top: 2vh;
+        left: 2vh;
+      }
+    }
+  }
 `;
 
 export const Navigation = styled.nav`
@@ -23,6 +43,10 @@ export const Navigation = styled.nav`
   flex-direction: column;
   border-top: 1px solid #7deaf4;
   width: 100%;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const Links = styled(Link)`
